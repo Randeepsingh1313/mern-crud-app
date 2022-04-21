@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 const express = require('express')
-const router = express.router()
+const router = express.Router()
 let student = require("../models/Student");
 
 // CREATE Student
@@ -72,6 +72,8 @@ router.delete('/delete-student/:id', ( req, res, next) => {
           }
     })
 })
+
+module.exports = router ;
 
 
 
