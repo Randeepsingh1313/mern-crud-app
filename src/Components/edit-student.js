@@ -25,7 +25,7 @@ const EditStudent = (props) => {
 
       // Load data from server and reinitialize student form
       useEffect(() => {
-          axios.get("http://localhost:3000/students/update-student/"+ props.match.params.id)
+          axios.get("http://localhost:4000/students/update-student/"+ props.match.params.id)
           .then((res) => {
               const { name, email, rollno } = res.data
               setFormValues({ name, email, rollno })
