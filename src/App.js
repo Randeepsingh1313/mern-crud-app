@@ -30,7 +30,7 @@ const App = () => {
                 </Nav>
   
                 <Nav>
-                  <Link to={"/student-list"} 
+                  <Link to={"/students"} 
                     className="nav-link">
                     Student List
                   </Link>
